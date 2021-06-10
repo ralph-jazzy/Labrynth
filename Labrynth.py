@@ -76,7 +76,7 @@ def check_winning_conditions(list_of_winning_directions, list_of_user_directions
     
 
 
-def play_round():
+def play_round(): #main body of game where user inputs their decisions. 
 
     user_list = []
     while len(user_list) <= 2:
@@ -118,6 +118,10 @@ def old_game(key_list):
     new_guesses = play_round() #creates new list of guesses from this new round
     check_winning_conditions(old_winning_key, new_guesses)
     
+
+
+
+
 introduction()
  
 
