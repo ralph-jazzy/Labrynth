@@ -98,15 +98,6 @@ def play_round():
     return user_list
 
 
-def make_winning_list():#creates list of directions that computer will use as winning parameters
-
-    options = ["L", "R"] #winning list is taken from these two directions
-    winning_list = []
-
-    for i in range(3):
-        winning_list.append(random.choice(options)) #creates random list with three values taken from options list
-    
-    return winning_list
 
 def introduction():
     print("You enter the labrynth. Ahead of you are three decisions.\nIf you get them all correct, you have beaten the labrynth.")
