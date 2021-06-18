@@ -29,7 +29,6 @@ def play_again_new():
     if again == "Y":
         new_game()
     
-    
     elif again == "N":
         print("Thanks for playing!")
         
@@ -52,7 +51,6 @@ def show_hint(list_of_winning_directions, list_of_user_directions):#method that 
     if list_of_user_directions[2] == list_of_winning_directions[2]:
             hint += 1
             
-        
     else:
         pass
 
@@ -80,6 +78,7 @@ def check_winning_conditions(list_of_winning_directions, list_of_user_directions
     
         try_again(list_of_winning_directions)
             
+
 
 def try_again(list_of_winning_directions):      
         
@@ -113,17 +112,21 @@ def play_round(): #main body of game where user inputs their decisions.
             print("You go right.")
         
     
-         
-        
         else:
             print("Please enter L or R.")
     
     return user_list
 
+
+
+
 def main():
     print("You approach the Labrynth. Ahead of you are three decisions.\nIf you get them all correct, you escape the Labrynth!\nIf you fail, you will remain in the Labrynth but you can keep trying until you escape.\nYou will be given a hint after every failed attempt. Good luck!")
     input("Press Enter when you are ready to enter the Labrynth. ")
     new_game()
+
+
+
 
 def new_game(): #only runs at first or if winning conditions are met. 
     print("You enter the Labrynth...")
