@@ -38,9 +38,9 @@ def play_again_new():
 
 
 
-def show_hint(list_of_winning_directions, list_of_user_directions, num):#method that prints how many of the choices are correct 
+def show_hint(list_of_winning_directions, list_of_user_directions):#method that prints how many of the choices are correct 
 	
-    hint = num
+    hint = 0
 
     
     if list_of_user_directions[0] == list_of_winning_directions[0]:
@@ -75,7 +75,7 @@ def check_winning_conditions(list_of_winning_directions, list_of_user_directions
 	    
         print("You made a wrong turn somewhere!")
         
-        show_hint(list_of_winning_directions, list_of_user_directions, 0)#function here that compares the two lists 
+        show_hint(list_of_winning_directions, list_of_user_directions)#function here that compares the two lists 
             #and displays which guesses were correct                # 0 resets hint 
     
         try_again(list_of_winning_directions)
