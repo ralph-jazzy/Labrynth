@@ -120,7 +120,7 @@ def play_round(): #main body of game where user inputs their decisions.
     
     return user_list
 
-def introduction():
+def main():
     print("You approach the Labrynth. Ahead of you are three decisions.\nIf you get them all correct, you escape the Labrynth!\nIf you fail, you will remain in the Labrynth but you can keep trying until you escape.\nYou will be given a hint after every failed attempt. Good luck!")
     input("Press Enter when you are ready to enter the Labrynth. ")
     new_game()
@@ -142,7 +142,7 @@ def old_game(key_list):
 
 
 
-introduction()
+main()
  
 
 
